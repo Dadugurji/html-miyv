@@ -1,0 +1,47 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #000; /* Fallback background */
+}
+
+.container {
+    position: relative;
+    max-width: 100%; /* Limit the container to the viewport width */
+    transition: all 2s ease; /* Smooth transition for resizing */
+}
+
+#expandingImage {
+    width: 50vw; /* Start with a smaller image */
+    transition: all 2s ease; /* Smooth transition for resizing */
+    object-fit: cover; /* Ensure the aspect ratio is maintained */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em; /* Large, readable text */
+    text-align: center;
+}
+
+#unmuteButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #444;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
